@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <script src="https://kit.fontawesome.com/5485bfc962.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Flex Use Network</title>
+    <style>
+        .login-container {
+            display: flex;
+            justify-content: center;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input, button {
+            font-size: 1.3em;
+            margin-top: 15px;
+            padding-left: 10px;
+            border: 1px solid lightgray
+        }
+
+        .login-form button {
+            background-color: orange;
+            color: whitesmoke;
+            font-weight: 700;
+            border-radius: 5px;
+            border: 0;
+            padding: 5px
+        }
+
+        nav.login-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav.login-nav a {
+            text-decoration: none;
+            color: blue;
+            font-weight: 600;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+
+        .fa-user-circle {
+            color: blue
+        }
+
+        .fa-sign-out-alt {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Use <span style="color: black">Network</span></h1>
+
+    <main>
+        <section>
+            <header class="header">
+
+                <nav>
+                    <ul>
+                        <li><a href="../explore-HTML5/index.html">Home</a></li><br>
+                        <li><a href="#">Layout</a>
+                            <ul class="dropdown">
+                                <li><a href="album.html">Album</a></li><br>
+                                <li><a href="calender.html">Calender</a></li><br>
+                                <li><a href="flexbox.html">Flex-Box</a></li><br>
+                                <li><a href="flexuse.html">Flex Use</a></li><br>
+                                <li><a href="grid.html">Grid</a></li><br>
+                                <li><a href="responsive.html">Responsive</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <h2>Welcome to Flex Use</h2>
+                <h2>I'm learning <span style="color:rgb(187, 255, 0)">Flex Use</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quod quam at porro distinctio,
+                    eum
+                    odio eveniet laudantium facilis eaque asperiores assumenda repellendus officia. Nesciunt aspernatur
+                    nam
+                    pariatur! Nisi, itaque.
+                </p>
+            </header>
+
+            <section class="blogs">
+
+                <h2>Let's Explore Flex Use!</h2>
+
+                <header>
+                    <nav class="login-nav">
+                        <span class="">
+                            <a href="index.html">Home</a>
+                            <a href="products.html">Products</a>
+                            <a href="orders.html">Orders</a>
+                            <a href="about.html">About Us</a>
+                        </span>
+                        <span class="">
+                            <a href="user.html"><i class="fas fa-user-circle"></i></a>
+                            <a href="logout.html"><i class="fas fa-sign-out-alt"></i></a>
+                        </span>
+                    </nav>
+                </header>
+            
+                <!-- section.login-container -->
+                <section class="login-container">
+                    <!-- form.login-form -->
+                    <form action="" class="login-form">
+                        <h2>Login Form</h2>
+                        <input type="email" name="email" id="" placeholder="Your Email" required>
+                        <input type="password" name="password" id="" placeholder="Your Password">
+                        <button type="submit">Login</button>
+                    </form>
+                </section>
+
+            </section>
+        </section>
+    </main>
+
+    <footer>Nafi Mahmud &copy Copyright 2021 | Flex Use <span style="color: grey">Network</span></footer>
+</body>
+
+</html>

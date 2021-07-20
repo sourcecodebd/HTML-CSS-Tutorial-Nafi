@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Form Network</title>
+    <style>
+        .input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input .btn {
+            float: right
+        }
+
+        .middle-person {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(238, 85, 85);
+            color: white;
+            height: 50px;
+            width: 500px;
+            margin-bottom: 1%;
+            border-radius: 10px;
+            border: 1px solid white;
+            font-size: 18px;
+        }
+
+        .middle-person:hover {
+            background-color: rgb(0, 235, 252);
+            color: black;
+            font-weight: bold;
+            font-size: 21px;
+            border: 1px solid black;
+        }
+
+        .btn {
+            background-color: rgb(17, 0, 252);
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 15px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            background-color: rgb(252, 143, 0);
+            color: white;
+            border: 2px solid white
+        }
+
+        ::placeholder {
+            color: white;
+            padding: 25px
+        }
+
+        input:hover::-webkit-input-placeholder {
+            color: black;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .middle-person {
+                width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form <span style="color: black">Network</span></h1>
+
+    <main>
+        <section>
+            <header class="header">
+
+                <nav>
+                    <ul>
+                        <li><a href="../explore-HTML5/index.html">Home</a></li><br>
+                        <li><a href="#">HTML</a>
+                            <ul class="dropdown">
+                                <li><a href="form.html">Form</a></li><br>
+                                <li><a href="table.html">Table</a></li><br>
+                                <li><a href="audio-video.html">Audio-Video</a></li><br>
+                                <li><a href="semantic.html">Semantic</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <h2>Welcome to Form</h2>
+                <h2>I'm learning <span style="color:rgb(187, 255, 0)">Form</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quod quam at porro distinctio,
+                    eum
+                    odio eveniet laudantium facilis eaque asperiores assumenda repellendus officia. Nesciunt aspernatur
+                    nam
+                    pariatur! Nisi, itaque.
+                </p>
+            </header>
+
+            <section class="blogs">
+                <h2>Form Collection</h2>
+                <div class="input">
+                    <form action="">
+                        Name<input type="text" name="name" id="name" class="middle-person"
+                            placeholder="Enter your name">
+                        Email<input type="email" name="email" id="email" class="middle-person"
+                            placeholder="Enter your email">
+                        Password<input type="password" name="password" id="password" class="middle-person"
+                            placeholder="Enter your password">
+                        Birthday<input type="date" name="date" id="date" class="middle-person">
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+
+                <form action="">
+                    <p>
+                        Name <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </p>
+                    <p>
+                        Email <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </p>
+                    <p>
+                        Password <input type="password" name="password" id="password" placeholder="Enter your password">
+                    </p>
+                    <p>
+                        Birthday <input type="date" name="date" id="date">
+                    </p>
+                    <fieldset>
+                        <legend>
+                            Select your Pitha
+                        </legend>
+                        <p>
+                            <label for="chitoi">
+                                <input type="radio" name="pitha" id="chitoi">Chitoi
+                            </label>
+                        </p>
+                        <p>
+                            <label for="vapa">
+                                <input type="radio" name="pitha" id="vapa">Vapa
+                            </label>
+                        </p>
+                        <p>
+                            <label for="tell">
+                                <input type="radio" name="pitha" id="tell">Tell er Pitha
+                            </label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            Select your Fish Curry
+                        </legend>
+                        <p>
+                            <label for="fish">
+                                <select name="fish" id="fish">
+                                    <option value="Hilsha">Hilsha</option>
+                                    <option value="Pompano">Pompano</option>
+                                    <option value="Sea Mullet">Sea Mullet</option>
+                                </select>
+                            </label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            Select your Vorta
+                        </legend>
+                        <!-- p*3>label>input:checkbox -->
+                        <p><label for="sorisha"><input type="checkbox" name="vorta" id="sorisha">Shorisha</label></p>
+                        <p><label for="shutki"><input type="checkbox" name="vorta" id="shutki">Shutki</label></p>
+                        <p><label for="begun"><input type="checkbox" name="vorta" id="begun">Vorta</label></p>
+                    </fieldset>
+                    <p>
+                        Special Instruction: <br>
+                        <textarea name="instruction" id="instruction" cols="45" rows="10"></textarea>
+                    </p>
+                    <button type="submit">Request</button>
+                    <button type="reset">Reset</button>
+                    </p>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>Nafi Mahmud &copy Copyright 2021 | Form <span style="color: grey">Network</span></footer>
+</body>
+
+</html>

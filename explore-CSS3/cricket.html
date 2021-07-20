@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Cricket Match Network</title>
+    <style>
+        .pitch {
+            width: 102%;
+            margin: 0;
+            border: 2px solid yellow;
+            position: relative;
+            bottom: -260px
+        }
+
+        .field {
+            background-color: green;
+            border-radius: 15px;
+            padding: 50px;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .field:hover .ball {
+            transform: translate(1800px, -500px);
+        }
+
+        .bat {
+            height: 300px;
+            transform: rotate(35deg);
+            transition: transform 0.3s ease
+        }
+
+        .bat:hover {
+            transform: rotate(-60deg);
+            z-index: 1
+        }
+
+        .ball {
+            height: 20px;
+            width: 20px;
+            border-radius: 50px;
+            background-color: white;
+            transform: rotate(35deg);
+            position: relative;
+            left: 428px;
+            top: -80px;
+            transition: transform 1s ease-out 0.2s
+        }
+
+        .ball:hover {
+            transform: rotate(80deg);
+
+        }
+
+        .container {
+            margin: auto;
+            height: 400px;
+            width: 800px;
+            overflow-x: hidden
+        }
+
+        .container p {
+            overflow: scroll;
+            overflow-x: hidden
+        }
+
+        .blogs {
+            text-align: justify;
+        }
+
+        .orange {
+            color: rgb(255, 72, 0)
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                overflow-x: hidden
+            }
+
+            .pitch {
+                width: 110%;
+                margin: 0;
+                border: 2px solid yellow;
+                position: relative;
+                bottom: -137px
+            }
+
+            .bat {
+                height: 150px;
+                margin-left: -50px;
+                transform: rotate(35deg)
+            }
+
+            .bat:hover {
+                transform: rotate(-70deg)
+            }
+
+            .ball {
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: rgba(126, 24, 24, 0.822);
+                border: 1px solid white;
+                transform: rotate(35deg);
+                position: relative;
+                left: 160px;
+                top: -53px;
+            }
+
+            .ball:hover {
+                transform: rotate(80deg);
+            }
+
+            .container {
+                margin: auto;
+                height: 500px;
+                width: 340px;
+                overflow-x: hidden
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cricket Match <span style="color: black">Network</span></h1>
+
+    <main>
+        <section>
+            <header class="header">
+
+                <nav>
+                    <ul>
+                        <li><a href="../explore-HTML5/index.html">Home</a></li><br>
+                        <li><a href="#">CSS3</a>
+                            <ul class="dropdown">
+                                <li><a href="svg.html">SVG</a></li><br>
+                                <li><a href="visibility.html">Visibilty</a></li><br>
+                                <li><a href="overflow.html">Overflow</a></li><br>
+                                <li><a href="images.html">Image</a></li><br>
+                                <li><a href="icon.html">Icon</a></li><br>
+                                <li><a href="transform.html">Transform</a></li><br>
+                                <li><a href="transition.html">Transition</a></li><br>
+                                <li><a href="cricket.html">Cricket Match</a></li><br>
+                                <li><a href="animation.html">Animation</a></li><br>
+                                <li><a href="float.html">Float</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+                <h2>Welcome to Cricket Match</h2>
+                <h2>I'm learning <span style="color:rgb(187, 255, 0)">Cricket Match</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quod quam at porro distinctio,
+                    eum
+                    odio eveniet laudantium facilis eaque asperiores assumenda repellendus officia. Nesciunt aspernatur
+                    nam
+                    pariatur! Nisi, itaque.
+                </p>
+
+                <div class="field">
+                    <div class="pitch"></div>
+                    <img class="bat" src="images/bat.png" alt="">
+                    <div class="ball">
+                    </div>
+
+            </header>
+        </section>
+        <section class="blogs">
+            <h3>About Cricket Match</h3>
+            <div class="container">
+                <p>
+                    Test cricket is a game that spans over two innings. This means that one team needs to bowl the other
+                    team out twice and score more runs then them to win the match. Another key difference between test
+                    cricket and other forms of cricket is the length of the innings. In test cricket there is no limit
+                    to the innings length. Whereas in one day cricket & Twenty20 cricket there are a certain amount of
+                    overs per innings. The only limits in test cricket is a 5 day length. Before the game begins an
+                    official will toss a coin. The captain who guesses the correct side of the coin will then choose if
+                    they want to bat or field first. One team will then bat while the other will bowl & field. The aim
+                    of the batting team is to score runs while the aim of the fielding team is to bowl ten people out
+                    and close the batting teams’ innings. Although there are eleven people in each team only ten people
+                    need to be bowled out as you cannot have one person batting alone. Batting is done in pairs.
+
+                    Once the first team has been bowled out the second team would then go into bat. Once the second team
+                    is then bowled out it would normally return to the first team batting again. However there is an
+                    exception to this in the cricket rules, it is called the follow-on. The follow-on is when the first
+                    team makes at least 200 runs more than the second team made (in a 5 day test match). This then gives
+                    the first team the option to make the second team bat again. This is particularly useful if the game
+                    is progressing slowly or affected by bad weather and there might not be enough time for both teams
+                    to play a full innings. Should this be the case the batting team’s captain also has the right to
+                    forfeit their innings at any time. This is called a declaration. Some may wonder why a captain would
+                    forfeit the opportunity for his team to bat. However if the game is coming close to a close and it
+                    looks like they will not be able to bowl the other team out again this could be an option. If one
+                    team is not bowled out twice and a winner determined in the five days of play the game is declared a
+                    draw. Therefore it may be worth declaring an innings to creat the possibility of a win rather than a
+                    draw.
+
+                    Ways to score runs
+                    The aim of the batsmen is to score runs. One of the main cricket rules is that for batsmen to score
+                    runs they must run to each other’s end of the pitch (from one end to the other). In doing this one
+                    run is scored. Cricket rules state they may run multiple runs per shot. As well as running they can
+                    also score runs by hitting boundaries. A boundary scores the batsmen either 4 or 6 runs. A four is
+                    scored by hitting the ball past the boundary after hitting the ground while a six is scored by
+                    hitting the ball past the boundary on the full (before it hits the ground). Cricket rules also state
+                    that once a 4 or 6 has been scored any runs physically ran by the batsman are null & void. They will
+                    only obtain the 4 or 6 runs.
+
+                    Other ways runs can be scored according to the cricket rules include no balls, wide balls, byes &
+                    leg byes. Cricket rules state that all runs scored by these methods are awarded to the batting team
+                    but not the individual batters.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>Nafi Mahmud &copy Copyright 2021 | Cricket Match <span style="color: grey">Network</span></footer>
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!-- While working with float: left, no margin or padding is allowed -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <title>Custom Property</title>
+    <style>
+        /* root tag [ properties customization ] */
+        :root {
+            --side-width: 200px;
+            --bg-slateblue: slateblue;
+            --bg-indigo: indigo;
+            --header-dark: black;
+            --header-white: whitesmoke;
+            --footer-dark: black;
+            --footer-white: whitesmoke;
+            --container-red: rgb(226, 34, 34);
+            --container-orange: rgb(202, 184, 17);
+            --white-border: 2px solid white
+        }
+
+        body {
+            height: 100%;
+            width: 99%;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        /* main tag [ to stretch left and right side ] */
+        main {
+            margin: -8px 100px 0 100px
+        }
+
+        header {
+            background-color: var(--bg-indigo);
+            color: var(--header-white);
+            text-align: justify;
+            padding: 25px
+        }
+
+        .content-1 {
+            color: #eee;
+            background-color: var(--container-red);
+            border: var(--white-border)
+        }
+
+        .content-2 {
+            order: 2;
+            background-color: var(--container-orange);
+            border: var(--white-border)
+        }
+
+        /* two container section [ display: flex, flex: wrap properties has been used to wrap the content finely side-by-side no matter what is the screen ratio ] */
+        .container-1 {
+            padding: 25px;
+            text-align: justify;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .container-2 {
+            padding: 25px;
+            text-align: justify;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 300px;
+            margin: 25px;
+            position: relative;
+        }
+
+        /* container section [ overflow: scroll and webkit of scroll-hide properties has been used ] */
+        #sticky {
+            position: sticky;
+            top: 0;
+            overflow-y: hidden
+        }
+
+        #box-1 {
+            order: 1;
+        }
+
+        #box-1 p {
+            height: 300px;
+            overflow-x: hidden;
+            overflow: scroll
+        }
+
+        #box-1 p::-webkit-scrollbar {
+            display: none;
+        }
+
+        #box-2 {
+            order: 2;
+            flex-grow: 1;
+        }
+
+        #box-2 p {
+            height: 300px;
+            overflow-x: hidden;
+            overflow: scroll
+        }
+
+        #box-2 p::-webkit-scrollbar {
+            display: none
+        }
+
+
+        /* aside-about section [ float, calc function has been used ] */
+        .side-nav,
+        .about {
+            float: left;
+            height: 500px;
+        }
+
+        aside {
+            background-color: springgreen;
+            width: var(--side-width);
+        }
+
+        aside h3 {
+            margin: 25px;
+            padding: 25px
+        }
+
+        aside p {
+            height: 300px;
+            overflow-x: hidden;
+            overflow: scroll;
+            padding: 25px;
+            text-align: justify;
+        }
+
+        aside p::-webkit-scrollbar {
+            display: none;
+        }
+
+        .about {
+            background-color: #00e9ff;
+            /* width: calc(100% - 200px); */
+            width: calc(100% - var(--side-width))
+        }
+
+        .about h3 {
+            margin: 25px;
+            padding: 25px
+        }
+
+        .about p {
+            height: 300px;
+            width: 400px;
+            overflow-x: hidden;
+            overflow: scroll;
+            margin: 25px;
+            padding: 25px;
+            text-align: justify;
+        }
+
+        .about p::-webkit-scrollbar {
+            display: none;
+        }
+
+        footer {
+            clear: both;
+            background-color: var(--footer-dark);
+            color: orange;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            body,
+            main {
+                width: 100%;
+                margin: auto;
+            }
+
+            h1 {
+                font-size: 1.8em
+            }
+
+            header {
+                text-align: justify;
+            }
+
+            .food {
+                background-color: rgb(172, 199, 74);
+                margin-bottom: 20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>I'm exploring Custom Properties</h1>
+            <p>Welcome To My Websites</p>
+        </header>
+        <section class="content-1">
+            <div class="container-1">
+                <div id="box-1" class="box">
+                    <h3 id="sticky">Box-1</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nihil ipsum aperiam deserunt
+                        distinctio. Est voluptatibus adipisci praesentium placeat fugit vero minus inventore delectus
+                        possimus illum sit quas accusamus aliquid eius fugiat soluta dignissimos dolor voluptas,
+                        suscipit in, sequi quae explicabo tenetur? Alias, dolorem dolorum harum modi voluptatibus neque
+                        provident incidunt impedit mollitia laboriosam amet repudiandae veniam voluptatem, iste natus
+                        corrupti commodi, nostrum facilis. Libero eos officiis officia soluta maxime, illum corporis
+                        vel. Temporibus corrupti quia reprehenderit eligendi cumque quos neque magni. Nesciunt officiis
+                        harum animi voluptate. Sed non excepturi perspiciatis rerum alias, repellendus totam aliquam
+                        quisquam! Quis provident suscipit ipsam, quae aliquid mollitia sint a maiores vitae similique
+                        est perferendis odit quasi id quidem quas, possimus sapiente necessitatibus optio enim. Minus
+                        quis vel eius accusamus natus asperiores ratione tenetur, consectetur velit, voluptates modi
+                        cupiditate, hic vitae et explicabo quae sequi sit nam consequatur unde animi suscipit? Adipisci,
+                        laborum reprehenderit deleniti debitis iusto optio! Laboriosam suscipit nihil soluta tenetur
+                        porro earum repellat laudantium, modi aut at nisi dolor, ullam obcaecati temporibus quaerat
+                        officia numquam magni culpa, qui dignissimos maiores. Quisquam enim consequatur eius autem nobis
+                        voluptate maiores, in velit odio a praesentium consectetur culpa tempora, voluptatum laborum
+                        sint unde nemo.</p>
+                </div>
+                <div id="box-2" class="box">
+                    <h3 id="sticky">Box-2</h3>
+                    <p>Dolorum iure ab id fugiat sunt eaque ut ullam facilis, qui nihil ratione incidunt laborum
+                        recusandae tempora harum modi natus corporis! Dolorem consequatur at inventore. Aspernatur,
+                        explicabo quod tempora sit ab rerum necessitatibus voluptatibus quam exercitationem nobis
+                        sapiente, architecto laboriosam a ipsum soluta ipsa nam inventore ea illum repellat nesciunt.
+                        Asperiores aperiam similique aspernatur repellat, adipisci voluptatibus aliquam ratione atque
+                        doloremque quibusdam a sint dolore nesciunt repellendus. Quos illum doloremque eum doloribus
+                        maxime quod possimus similique rerum velit, earum ratione molestiae voluptatibus repudiandae
+                        deleniti aspernatur eveniet, libero esse animi quaerat praesentium ut distinctio quis neque.
+                        Repellendus vitae mollitia, molestiae voluptatibus commodi vero id maxime. Vel similique
+                        reprehenderit placeat quisquam unde. Debitis impedit, mollitia perspiciatis laboriosam deserunt
+                        eveniet illo incidunt sint perferendis voluptatibus, delectus nesciunt? Et, aut. Exercitationem
+                        ex rem quos ipsa modi iure, deleniti unde amet? Unde eveniet explicabo similique recusandae modi
+                        sed? Hic libero earum, officiis ab cum sit eum blanditiis alias animi. Iusto cupiditate ad quas
+                        exercitationem totam accusantium provident, autem amet est suscipit quam vero voluptas nemo quo
+                        voluptatum incidunt dolorum at sed, tempore dicta aperiam fuga omnis assumenda. Atque nisi fuga
+                        numquam impedit soluta aperiam possimus doloribus, architecto optio laudantium obcaecati, iusto
+                        nostrum aspernatur ullam adipisci.</p>
+                </div>
+            </div>
+        </section>
+        <section class="content-2">
+            <div class="container-2">
+                <div class="box">
+                    <h3>Box-1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam enim doloribus deleniti nulla,
+                        accusantium necessitatibus numquam inventore cupiditate ratione sequi vel dolore soluta.
+                        Blanditiis aperiam laborum dolorem iusto quis nemo cum temporibus repellat exercitationem,
+                        voluptate debitis voluptatum doloribus libero, aspernatur hic dolores earum est provident
+                        suscipit aliquid doloremque saepe nesciunt sit impedit. Velit soluta excepturi, asperiores aut
+                        accusantium dolore sit neque! Quaerat aliquam quis repudiandae facere asperiores cupiditate a
+                        inventore ut! Culpa quisquam necessitatibus dignissimos odio ab magni molestiae quo neque ipsam
+                        esse, nemo itaque, corrupti laborum nostrum debitis at vel id odit cumque aspernatur voluptas!
+                        Porro ex sed ipsa perspiciatis possimus, non a ea sapiente harum velit vero. Quam, quis sequi
+                        aspernatur molestias totam magnam enim, odio consectetur perspiciatis debitis expedita. Eaque
+                        minus veniam vero, unde fugit dolore officiis odio asperiores sequi quisquam id dolores ex,
+                        perferendis explicabo repellat! Vero, tempora? Reiciendis, laborum eum? Voluptate minima
+                        explicabo voluptates assumenda labore sunt nihil, facere, eum fugiat praesentium laborum quae
+                        dolor reprehenderit. Inventore minus eum voluptatibus asperiores in voluptatem, reiciendis,
+                        facere culpa necessitatibus nulla at, exercitationem pariatur commodi. Dolore, nostrum itaque
+                        culpa odio totam placeat vel enim porro earum eius, doloremque accusamus unde veniam ea
+                        aspernatur praesentium. Officiis minus natus soluta.</p>
+                </div>
+                <div class="box">
+                    <h3>Box-2</h3>
+                    <p>Sint, quis beatae cum ex magnam hic ducimus aspernatur quasi ut quidem fuga rem pariatur labore
+                        ullam itaque placeat reiciendis numquam! Amet error nobis possimus! Et at architecto fugit harum
+                        iusto ipsam ratione reprehenderit. Explicabo magnam facere deleniti alias asperiores totam
+                        laborum omnis, quidem reiciendis, libero qui dolorem doloribus odio deserunt sit? Praesentium
+                        vel corrupti natus ea perspiciatis, voluptates eos. Minus deserunt quibusdam suscipit
+                        reprehenderit dolore, neque inventore expedita explicabo omnis tempore rem officiis corrupti
+                        recusandae totam delectus necessitatibus saepe optio ducimus cum at, repudiandae dolores minima
+                        enim. Error maiores perspiciatis aliquam cumque maxime magnam velit repellat illo, nam vel
+                        quibusdam asperiores consequuntur vero natus consectetur, obcaecati eum enim id? Dolores
+                        voluptas at neque sed voluptates exercitationem doloremque est iusto unde cupiditate! Architecto
+                        id tempora esse nulla. Voluptas et eos enim minima magnam voluptates minus aliquam vitae, quis
+                        praesentium tempora veniam cum tempore iste sit ex asperiores repudiandae delectus magni
+                        maiores! Cupiditate, distinctio minus tempora veniam nihil quaerat hic debitis quos quae
+                        deleniti exercitationem obcaecati aperiam alias illo possimus animi veritatis modi. Officiis
+                        possimus atque ad, quaerat non provident voluptatum facilis sint impedit consequatur maiores
+                        eos. Ex, voluptatibus. Officia ipsa et, in mollitia nesciunt voluptate recusandae quas soluta
+                        aut error!</p>
+                </div>
+                <div class="box">
+                    <h3>Box-3</h3>
+                    <p>Necessitatibus odit laborum officia similique, porro placeat dicta ex rerum enim ea vero quas
+                        debitis sapiente suscipit dignissimos pariatur quae distinctio! Magnam voluptatibus nobis unde
+                        fugit, dolor vel debitis, vitae veniam perferendis consequatur labore delectus deserunt quos
+                        temporibus similique consequuntur quae, incidunt officiis assumenda placeat nemo facilis
+                        adipisci? Quos sit eligendi vero ducimus quaerat repellendus reprehenderit amet totam
+                        recusandae, porro error fugit laborum facilis sint nisi est quod. Eveniet ullam, nam est
+                        voluptates doloremque, aspernatur doloribus molestiae asperiores natus modi commodi! In nihil
+                        dolorem reiciendis minus consequuntur ipsa odio impedit temporibus hic tempore quod labore
+                        debitis quidem quia, magnam ducimus odit similique rem necessitatibus ut modi totam laudantium.
+                        Ratione saepe necessitatibus ipsa maiores placeat unde animi non consequatur magni ex laboriosam
+                        natus, quibusdam aspernatur nam tempore perspiciatis quam cumque sit ipsam, cum accusamus
+                        asperiores odio! Reprehenderit nisi eveniet quaerat sequi quos voluptate dolores, assumenda
+                        obcaecati modi dolore est iste, veniam magnam dolor veritatis. Obcaecati eligendi fuga non, sint
+                        enim ullam eos veritatis expedita soluta ad eum dolores quibusdam! Magni facilis enim
+                        voluptatibus dolorum at modi commodi unde perferendis quaerat maiores, ipsam molestiae quam eius
+                        delectus dolores officiis totam id dolore blanditiis ad accusamus necessitatibus porro quae
+                        quia? Sit, consectetur at?</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <aside class="side-nav">
+                <h3>About Me</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eaque accusantium accusamus quasi
+                    tempora omnis eum a quo, est autem sed cupiditate dolorum facere. Earum laborum quaerat iusto
+                    consequatur non iure dolorem facilis voluptate ad hic, atque ut tempore sed beatae in excepturi esse
+                    incidunt minus assumenda ipsum eum! Velit, eius ipsum suscipit amet quod eveniet praesentium quia
+                    nostrum rerum placeat labore sequi nemo, deleniti consequatur repellendus, officia libero
+                    necessitatibus itaque magni repudiandae accusantium fugit iusto error debitis? Harum earum pariatur
+                    consequuntur nihil voluptatibus rem, perferendis consectetur quasi quaerat magnam quis aperiam omnis
+                    quam neque porro dolorum delectus sint officiis.</p>
+            </aside>
+            <div class="about">
+                <h3>My Activities</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptas numquam in quisquam
+                    eligendi obcaecati tempore sint, totam molestiae repudiandae nisi, saepe aliquam officia nulla
+                    cupiditate dolor. Eos animi accusamus ducimus cum veniam, praesentium at quo ratione ea consectetur.
+                    Cum, incidunt? Laboriosam minima officia tempora dolor impedit doloremque quod earum fugit, illo
+                    quae nihil corporis dolorum eligendi neque mollitia veritatis minus velit explicabo possimus eaque
+                    aspernatur autem culpa labore nulla? Accusamus sint iste quas omnis deleniti natus dolorem non,
+                    debitis et facilis harum repellat delectus beatae commodi architecto fugit amet unde eos nihil
+                    tenetur aliquid rerum modi? Velit culpa excepturi saepe iste officia omnis, ex, hic quidem ea illo
+                    nesciunt blanditiis distinctio minima quibusdam facilis assumenda obcaecati dolorum ipsum aliquid
+                    nemo molestiae! Error id quos, quaerat corrupti minima quam ad dicta, fugit repudiandae, voluptatum
+                    aliquid dolorem. Aut incidunt possimus quia voluptate quasi ex maxime adipisci vitae aliquid
+                    assumenda mollitia repudiandae ad odio minima eum repellendus cupiditate obcaecati, repellat a autem
+                    animi qui temporibus. In maiores consectetur corrupti adipisci nisi vero molestiae placeat, ea enim,
+                    dolores eum optio quod minima harum accusamus esse? Repudiandae dolore fugit unde suscipit illo
+                    quaerat at velit dignissimos molestias, excepturi sapiente temporibus nesciunt, possimus totam
+                    debitis.</p>
+            </div>
+        </section>
+        <footer>
+            Nafi Mahmud &copy 2021 | News Portal
+        </footer>
+    </main>
+</body>
+
+</html>

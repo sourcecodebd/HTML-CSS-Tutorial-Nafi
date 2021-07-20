@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Calender Network</title>
+    <style>
+        .calender {
+            height: 800px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 2em repeat(5, 1fr);
+            grid-gap: 1em
+        }
+
+        .date,
+        .day {
+            background-color: lightslategray;
+            font-size: 3em;
+            border: 1px solid lightgrey;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px
+        }
+
+        .day {
+            font-size: 2em;
+            color: white;
+            background-color: rgb(0, 195, 255);
+        }
+
+        .other-month {
+            background-color: lightgrey;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .date,
+            .day {
+                background-color: lightslategray;
+                font-size: 0.8em;
+                color: white;
+                border: 1px solid lightgrey;
+                height: 25%;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+            }
+
+            .day {
+                font-size: 20px;
+                background-color: rgb(0, 195, 255);
+            }
+
+            .calender {
+                height: 500px;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: 30px repeat(6, 1fr);
+                grid-gap: 10px;
+                overflow-y: hidden;
+                overflow: scroll
+            }
+
+            .other-month {
+                background-color: lightgrey;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calender <span style="color: black">Network</span></h1>
+
+    <main>
+        <section>
+            <header class="header">
+
+                <nav>
+                    <ul>
+                        <li><a href="../explore-HTML5/index.html">Home</a></li><br>
+                        <li><a href="#">Layout</a>
+                            <ul class="dropdown">
+                                <li><a href="album.html">Album</a></li><br>
+                                <li><a href="calender.html">Calender</a></li><br>
+                                <li><a href="flexbox.html">Flex-Box</a></li><br>
+                                <li><a href="flexuse.html">Flex Use</a></li><br>
+                                <li><a href="grid.html">Grid</a></li><br>
+                                <li><a href="responsive.html">Responsive</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <h2>Welcome to Calender</h2>
+                <h2>I'm learning <span style="color:rgb(187, 255, 0)">Calender</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quod quam at porro distinctio,
+                    eum
+                    odio eveniet laudantium facilis eaque asperiores assumenda repellendus officia. Nesciunt aspernatur
+                    nam
+                    pariatur! Nisi, itaque.
+                </p>
+            </header>
+
+            <section class="blogs">
+
+                <h2>Let's Observe Calender</h2>
+                <!-- .calender>.date*35{$} -->
+                <!-- multiline edit: ctrl + alt + down arrow -->
+                <div class="calender">
+                    <!-- div.day*7 -->
+                    <div class="day">S</div>
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day">S</div>
+                    <div class="date other-month">30</div>
+                    <div class="date other-month">31</div>
+                    <div class="date">1</div>
+                    <div class="date">2</div>
+                    <div class="date">3</div>
+                    <div class="date">4</div>
+                    <div class="date">5</div>
+                    <div class="date">6</div>
+                    <div class="date">7</div>
+                    <div class="date">8</div>
+                    <div class="date">9</div>
+                    <div class="date">10</div>
+                    <div class="date">11</div>
+                    <div class="date">12</div>
+                    <div class="date">13</div>
+                    <div class="date">14</div>
+                    <div class="date">15</div>
+                    <div class="date">16</div>
+                    <div class="date">17</div>
+                    <div class="date">18</div>
+                    <div class="date">19</div>
+                    <div class="date">20</div>
+                    <div class="date">21</div>
+                    <div class="date">22</div>
+                    <div class="date">23</div>
+                    <div class="date">24</div>
+                    <div class="date">25</div>
+                    <div class="date">26</div>
+                    <div class="date">27</div>
+                    <div class="date">28</div>
+                    <div class="date">29</div>
+                    <div class="date">30</div>
+                    <div class="date other-month">1</div>
+                    <div class="date other-month">2</div>
+                    <div class="date other-month">3</div>
+                </div>
+
+            </section>
+        </section>
+    </main>
+
+    <footer>Nafi Mahmud &copy Copyright 2021 | Calender <span style="color: grey">Network</span></footer>
+</body>
+
+</html>

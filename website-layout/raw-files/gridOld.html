@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <title>Grid</title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        /* grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px; */
+        /* grid-template-columns: repeat(4, 200px); */
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* grid-template-columns: repeat(4, 25%); */
+        /* grid-template-columns: repeat(6, 1fr) 100px; */
+        /* grid-template-columns: repeat(6, 1fr) 2fr; */
+        grid-gap: 60px 30px;
+    }
+
+    .grid-cell {
+        border: 1px solid goldenrod;
+        font-size: 1.3em;
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+        overflow-x: hidden;
+        overflow: scroll
+    }
+</style>
+
+<body>
+    <h1>Exploring Grid</h1>
+    <div class="grid-container">
+        <!-- .grid-cell*12>Lorem50 -->
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+        <div class="grid-cell"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio doloribus
+            recusandae illo. Hic maxime aliquam voluptatum rem voluptate delectus qui, omnis porro animi. Id quia ipsum
+            quod, blanditiis doloremque fuga earum delectus dolore, beatae facere laboriosam incidunt repudiandae, vel
+            ipsa deleniti odio nostrum. Dolore nobis rerum asperiores at corrupti voluptates ullam iusto sunt, facilis
+            vel minus itaque, et aspernatur, labore numquam aut maiores! Tenetur nihil distinctio eligendi blanditiis
+            suscipit! Aliquam repudiandae, unde, officiis accusamus, porro deserunt voluptate commodi placeat cupiditate
+            ipsum mollitia nisi similique ipsam quaerat ab ullam itaque doloribus pariatur fugit. Earum rem
+            exercitationem excepturi perspiciatis nisi eum.</div>
+    </div>
+</body>
+
+</html>

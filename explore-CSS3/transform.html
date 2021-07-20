@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Transform Network</title>
+    <style>
+        .container,
+        .inner {
+            height: 150px;
+            width: 150px;
+            border: 2px solid khaki;
+            margin: auto
+        }
+
+        .container {
+            background-color: lightblue;
+        }
+
+        .inner {
+            background-color: lightcoral;
+            /* transform: scale(0.75);
+            transform: rotate(45deg); */
+
+            /* transform: translate(50px) scale(0.75) rotate(45deg); */
+
+            /* transform: translateY(50px) scale(0.75) rotate(45deg); */
+
+            transform: translate(70px, 70px) scale(0.75) rotate(45deg);
+
+        }
+
+        .blogs {
+            text-align: justify;
+        }
+
+        .orange {
+            color: rgb(255, 72, 0)
+        }
+
+        @media screen and (max-width: 600px) {}
+    </style>
+</head>
+
+<body>
+    <h1>Transform <span style="color: black">Network</span></h1>
+
+    <main>
+        <section>
+            <header class="header">
+
+                <nav>
+                    <ul>
+                        <li><a href="../explore-HTML5/index.html">Home</a></li><br>
+                        <li><a href="#">CSS3</a>
+                            <ul class="dropdown">
+                                <li><a href="svg.html">SVG</a></li><br>
+                                <li><a href="visibility.html">Visibilty</a></li><br>
+                                <li><a href="overflow.html">Overflow</a></li><br>
+                                <li><a href="images.html">Image</a></li><br>
+                                <li><a href="icon.html">Icon</a></li><br>
+                                <li><a href="transform.html">Transform</a></li><br>
+                                <li><a href="transition.html">Transition</a></li><br>
+                                <li><a href="cricket.html">Cricket Match</a></li><br>
+                                <li><a href="animation.html">Animation</a></li><br>
+                                <li><a href="float.html">Float</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+                <h2>Welcome to Transform</h2>
+                <h2>I'm learning <span style="color:rgb(187, 255, 0)">Transform</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quod quam at porro distinctio,
+                    eum
+                    odio eveniet laudantium facilis eaque asperiores assumenda repellendus officia. Nesciunt aspernatur
+                    nam
+                    pariatur! Nisi, itaque.
+                </p>
+
+            </header>
+        </section>
+        <section class="blogs">
+            <h3>About Transform</h3>
+            <!-- .box.container*3>.inner{Box-$} -->
+            <div class="box container">
+                <div class="inner">Box-1</div>
+            </div>
+            <div class="box container">
+                <div class="inner">Box-2</div>
+            </div>
+            <div class="box container">
+                <div class="inner">Box-3</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>Nafi Mahmud &copy Copyright 2021 | Transform <span style="color: grey">Network</span></footer>
+</body>
+
+</html>

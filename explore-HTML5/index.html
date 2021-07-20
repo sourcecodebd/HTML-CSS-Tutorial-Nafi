@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Home Network</title>
+    <style>
+        .input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input .btn {
+            float: right
+        }
+
+        .middle-person {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(238, 85, 85);
+            color: white;
+            height: 50px;
+            width: 500px;
+            margin-bottom: 1%;
+            border-radius: 10px;
+            border: 1px solid white;
+            font-size: 18px;
+        }
+
+        .middle-person:hover {
+            background-color: rgb(0, 235, 252);
+            color: black;
+            font-weight: bold;
+            font-size: 21px;
+            border: 1px solid black;
+        }
+
+        .btn {
+            background-color: rgb(17, 0, 252);
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 15px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            background-color: rgb(252, 143, 0);
+            color: white;
+            border: 2px solid white
+        }
+
+        ::placeholder {
+            color: white;
+            padding: 25px
+        }
+
+        input:hover::-webkit-input-placeholder {
+            color: black;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        th {
+            margin: auto;
+            border: 2px solid grey;
+            padding: 0 10px
+        }
+
+        td {
+            margin: auto;
+            border: 1px solid grey;
+            padding: 0 10px
+        }
+
+        .blogs {
+            text-align: justify;
+        }
+
+        .photo-album {
+            text-align: justify;
+        }
+
+        .orange {
+            color: rgb(255, 72, 0)
+        }
+
+        .heading-parent {
+            display: flex;
+            justify-content: space;
+            align-items: center;
+            margin: 0
+        }
+
+        .heading-image {
+            width: 50%;
+            margin-top: -10%
+        }
+
+        .heading-text {
+            width: 50%;
+            margin-top: -20%
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .heading-parent {
+                width: 100%;
+            }
+
+            .heading-image img {
+                width: 200px;
+                height: 250px;
+                margin-left: -20px
+            }
+
+            .heading-text {
+                width: 50%;
+                margin-top: -5px
+            }
+
+            .middle-person {
+                width: 100%
+            }
+
+            .table-overflow {
+                overflow: scroll;
+                overflow-y: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Home <span style="color: black">Network</span></h1>
+
+    <main>
+        <section>
+            <header class="header">
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li><br>
+                        <li><a href="#">HTML</a>
+                            <ul class="dropdown">
+                                <li><a href="form.html">Form</a></li><br>
+                                <li><a href="table.html">Table</a></li><br>
+                                <li><a href="audio-video.html">Audio-Video</a></li><br>
+                                <li><a href="semantic.html">Semantic</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">CSS3</a>
+                            <ul class="dropdown">
+                                <li><a href="../explore-CSS3/svg.html">SVG</a></li><br>
+                                <li><a href="../explore-CSS3/visibility.html">Visibilty</a></li><br>
+                                <li><a href="../explore-CSS3/overflow.html">Overflow</a></li><br>
+                                <li><a href="../explore-CSS3/images.html">Image</a></li><br>
+                                <li><a href="../explore-CSS3/icon.html">Icon</a></li><br>
+                                <li><a href="../explore-CSS3/transform.html">Transform</a></li><br>
+                                <li><a href="../explore-CSS3/transition.html">Transition</a></li><br>
+                                <li><a href="../explore-CSS3/cricket.html">Cricket Match</a></li><br>
+                                <li><a href="../explore-CSS3/animation.html">Animation</a></li><br>
+                                <li><a href="../explore-CSS3/float.html">Float</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Layouts</a>
+                            <ul class="dropdown">
+                                <li><a href="../website-layout/album.html">Album</a></li><br>
+                                <li><a href="../website-layout/calender.html">Calender</a></li><br>
+                                <li><a href="../website-layout/flexbox.html">Flex-Box</a></li><br>
+                                <li><a href="../website-layout/flexuse.html">Flex Use</a></li><br>
+                                <li><a href="../website-layout/grid.html">Grid</a></li><br>
+                                <li><a href="../website-layout/responsive.html">Responsive</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Revision</a>
+                            <ul class="dropdown">
+                                <li><a href="../CSS-revision/custom.html">Custom</a></li><br>
+                                <ul class="dropdown">
+                                    <li><a href="">Link-1</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- <nav>
+                    <ul>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="semantic.html">Semantic</a>
+                            <ul class="dropdown">
+                                <li><a href="">Link-1</a></li><br>
+                                <li><a href="">Link-2</a></li><br>
+                                <li><a href="">Link-3</a></li><br>
+                                <li><a href="">Link-4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="audio-video.html">Audio-Video</a></li>
+                        <li><a href="index.html">Home</a>
+                            <ul class="dropdown">
+                                <li><a href="svg.html">SVG </a></li><br>
+                                <li><a href="../explore-CSS3/visibility.html">Visibilty </a></li><br>
+                                <li><a href="../explore-CSS3/overflow.html">Overflow </a></li><br>
+                                <li><a href="../explore-CSS3/images.html">Image </a></li><br>
+                                <li><a href="../explore-CSS3/icon.html">Icon </a></li><br>
+                                <li><a href="../explore-CSS3/transform.html">Transform </a></li><br>
+                                <li><a href="../explore-CSS3/transition.html">Transition </a></li><br>
+                                <li><a href="../explore-CSS3/cricket.html">Cricket Match </a></li><br>
+                                <li><a href="../explore-CSS3/animation.html">Animation </a></li><br>
+                                <li><a href="../explore-CSS3/float.html">Float </a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li><br>
+                                        <li><a href="">Link-4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav> -->
+
+                <h2>Welcome to Home</h2>
+                <h2>I'm learning <span style="color:rgb(187, 255, 0)">Home</span></h2>
+                <div class="heading-parent">
+                    <div class="heading-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quod quam at porro
+                            distinctio,
+                            eum
+                            odio eveniet laudantium facilis eaque asperiores assumenda repellendus officia. Nesciunt
+                            aspernatur
+                            nam
+                            pariatur! Nisi, itaque.
+                        </p>
+                    </div>
+                    <div class="heading-image">
+                        <img src="media/images/nafi.png" height="620px" width="500px" alt="">
+                    </div>
+                </div>
+            </header>
+
+            <section class="blogs">
+                <h2>Form Collection</h2>
+                <div class="input">
+                    <form action="">
+                        Name<input type="text" name="name" id="name" class="middle-person"
+                            placeholder="Enter your name">
+                        Email<input type="email" name="email" id="email" class="middle-person"
+                            placeholder="Enter your email">
+                        Password<input type="password" name="password" id="password" class="middle-person"
+                            placeholder="Enter your password">
+                        Birthday<input type="date" name="date" id="date" class="middle-person">
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+
+                <form action="">
+                    <p>
+                        Name: <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </p>
+                    <p>
+                        Email: <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </p>
+                    <p>
+                        Password: <input type="password" name="password" id="password"
+                            placeholder="Enter your password">
+                    </p>
+                    <p>
+                        Birthday: <input type="date" name="date" id="date" placeholder="Choose your your birthday">
+                    </p>
+                    <fieldset>
+                        <legend>
+                            Select your Pitha
+                        </legend>
+                        <p>
+                            <label for="chitoi">
+                                <input type="radio" name="pitha" id="chitoi">Chitoi
+                            </label>
+                        </p>
+                        <p>
+                            <label for="vapa">
+                                <input type="radio" name="pitha" id="vapa">Vapa
+                            </label>
+                        </p>
+                        <p>
+                            <label for="tell">
+                                <input type="radio" name="pitha" id="tell">Tell er Pitha
+                            </label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            Select your Vorta
+                        </legend>
+                        <!-- p*3>label>input:checkbox -->
+                        <p><label for="sorisha"><input type="checkbox" name="vorta" id="sorisha">Shorisha</label></p>
+                        <p><label for="shutki"><input type="checkbox" name="vorta" id="shutki">Shutki</label></p>
+                        <p><label for="begun"><input type="checkbox" name="vorta" id="begun">Vorta</label></p>
+                    </fieldset>
+                    <p>
+                        Special Instruction: <br>
+                        <textarea name="instruction" id="instruction" cols="45" rows="10"></textarea>
+                    </p>
+                    <button type="submit">Request</button>
+                    <button type="reset">Reset</button>
+                    </p>
+                </form>
+            </section>
+
+            <section class="blogs">
+                <div class="table-overflow">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Full Name</th>
+                                <th>Position</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- tr*4>td*4 -->
+                            <tr>
+                                <td>1</td>
+                                <td>Bill Gates</td>
+                                <td>Founder Microsoft</td>
+                                <td>$1000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Steve Jobs</td>
+                                <td>Founder Apple</td>
+                                <td>$1200</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry Page</td>
+                                <td>Founder Google</td>
+                                <td>$1100</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Mark Juckerburg</td>
+                                <td>Founder Facebook</td>
+                                <td>$1300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="blogs">
+                <!-- .blog*4>h3{My Blog-$}+p>Lorem50 -->
+                <article class="blog">
+                    <h3>My Blog-1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, ipsum optio minus, quas corrupti
+                        incidunt facere ut exercitationem temporibus vitae architecto inventore placeat corporis, quos
+                        deleniti libero eligendi illum! Officia amet quos harum? Impedit nostrum possimus inventore
+                        provident quo saepe rem accusantium exercitationem, maxime odio quisquam magni explicabo eaque
+                        ipsam?</p>
+                </article>
+                <article class="blog">
+                    <h3>My Blog-2</h3>
+                    <p>Autem incidunt, ipsum aspernatur aliquid earum illum molestiae voluptatibus magnam recusandae
+                        dolore consequatur omnis vel blanditiis, doloribus et adipisci nesciunt fugit numquam. Officia
+                        non, atque numquam deleniti modi perspiciatis ipsam vitae! Eum assumenda, nulla quidem, quasi
+                        ipsum aspernatur aut illum perferendis, quas commodi pariatur omnis dolores corporis tempore
+                        dolorum fuga?</p>
+                </article>
+                <article class="blog">
+                    <h3>My Blog-3</h3>
+                    <p>Maiores nihil quo deleniti eius voluptatem atque, fuga reiciendis, a, temporibus odio corrupti
+                        eveniet adipisci autem at facilis? Tempore fuga assumenda ullam culpa expedita voluptatum sed
+                        reiciendis perferendis inventore ipsa, dolores vel nulla libero excepturi quidem voluptatem,
+                        eius necessitatibus maiores quaerat. Voluptas, facilis qui. Deserunt labore quis debitis eaque
+                        magnam.</p>
+                </article>
+                <article class="blog">
+                    <h3>My Blog-4</h3>
+                    <p>Culpa, tempore, doloribus vel sunt saepe eos enim et maxime temporibus repudiandae dolores ipsa
+                        molestias, labore exercitationem quo corporis excepturi hic minus. Ullam corporis quisquam eos,
+                        esse suscipit tenetur similique blanditiis! Expedita ad aliquid sed reprehenderit cum pariatur,
+                        velit, consectetur neque quis placeat veniam vitae exercitationem iste adipisci incidunt
+                        repellat.</p>
+                </article>
+            </section>
+            <!-- .container>h3{Photo Album}+p>Lorem50 -->
+            <section class="photo-album">
+                <h3>Photo Album</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos laborum necessitatibus iusto ullam
+                    accusamus sunt tenetur, in atque iste aliquam aliquid officia ex nostrum nesciunt aut libero
+                    laudantium beatae, assumenda impedit deserunt? Explicabo libero voluptatum nisi, fugiat excepturi,
+                    quam sunt quibusdam repellendus reiciendis at velit odit? Ipsa, sit amet!</p>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>Nafi Mahmud &copy Copyright 2021 | Home <span style="color: grey">Network</span></footer>
+</body>
+
+</html>

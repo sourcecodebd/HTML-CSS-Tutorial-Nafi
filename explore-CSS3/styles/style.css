@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding-right: 5px;
+    overflow-x: hidden;
+    margin: -50px 0 auto auto;
+    justify-content: center;
+}
+
+h2, h3, p, .blogs, .photo-album {
+    padding: 5px 30px 5px 30px
+}
+
+.header {
+    color: #eee;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 50px;
+}
+
+h1 {
+    color: white;
+    background-color: rgb(255, 145, 0);
+    padding: 50px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-right: fit-content;
+    font-size: 40px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+
+h1:hover {
+    color: orange;
+    background-color: seagreen;
+}
+
+/* nav > ul => immediate child, er porer gula r apply hobe na */
+
+nav > ul {      
+    display: flex;
+    background-color:rgb(53, 66, 253);
+    padding: 0.5em;
+    font-size: 20px;
+    margin-top: -27px;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(53, 66, 253);
+    padding: 0.5em;
+}
+
+nav li a:hover {
+    background-color: rgb(253, 53, 53);
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+    padding: 30px;
+    width: fit-content;
+}
+
+nav > ul > li:hover > ul > li:hover > ul{
+    display: block;
+    margin-left: 40px;
+    padding: 30px;
+    width: 100%;
+    z-index: 1
+}
+
+.dropdown {
+    display: none;
+    position: absolute
+}
+
+
+footer {
+    margin-top: 230px;
+    background-color: black;
+    border: none;
+    color: orange;
+    margin-bottom: -3%;
+    font-size: 15px;
+    padding: 50px;
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: -50px auto auto auto;
+        display: block;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+    textarea {width: 99%}
+    
+    nav ul {
+        display: block;
+        font-size: 14px;
+    }
+    nav li {
+        display: inline-block;
+        margin: 10px
+    }
+
+    h2, h3, p, .blogs, .photo-album {
+        padding: 10px
+    }
+    
+}

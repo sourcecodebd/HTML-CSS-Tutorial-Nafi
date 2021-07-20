@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <title>Photo Album</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .photo-album {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .photo-frame-1 {
+            width: 300px;
+            height: 400px;
+            border: 2px solid goldenrod;
+            overflow-x: hidden;
+            overflow: scroll;
+            text-align: justify;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(26, 168, 168);
+            margin: 10px
+        }
+
+        .photo-detail-1 h3 {
+            background-color: rgb(30, 65, 65);
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px
+        }
+
+        .photo-detail-1 p {
+            background-color: rgb(16, 54, 54);
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .photo-frame-2 {
+            width: 600px;
+            height: 500px;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+            flex-grow: 2;
+            margin: 100px;
+            overflow: hidden
+        }
+
+        .photo-detail-2 {
+            position: absolute;
+            top: 0;
+            display: none;
+            height: 180px;
+            padding: 0 10px 20px 10px
+        }
+
+        .photo-detail-2 h3 {
+            background-color: rgb(30, 65, 65);
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .photo-frame-2:hover .photo {
+            /* transform: scale(1.5) rotate(360deg); */
+            transform: scale(1.5) skew(-30deg);
+            transition: transform 2s ease-in-out;
+        }
+
+        .photo-frame-2:hover .photo-detail-2 {
+            display: block;
+            background-color: rgba(0, 255, 200, 0.438);
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .photo-album {
+                display: block;
+            }
+
+            .photo-frame-2 {
+                width: 300px;
+                height: 200px;
+                margin: 0 auto;
+            }
+
+            .photo-detail-2 {
+                position: absolute;
+                top: 0;
+                display: none;
+                height: 180px;
+                padding: 0 10px 20px 10px
+            }
+
+            .photo-detail-2 h3 {
+                background-color: rgb(30, 65, 65);
+                color: white;
+                text-align: center;
+                border-radius: 5px;
+                padding: 5px
+            }
+
+            .photo img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .photo-frame-2:hover .photo-detail-2 {
+                display: block;
+                background-color: rgba(0, 255, 200, 0.438);
+                text-align: justify;
+            }
+        }
+
+    </style>
+    </head>
+    
+    <body>
+        <h1>Let's Explore Photo Album!</h1>
+        <section>
+            <div class="photo-album">
+                <div class="photo-frame-1">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-1">
+                        <h3>Tiger Mama Candid-1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur distinctio temporibus
+                            quos nam corrupti? Possimus natus ratione distinctio reiciendis dolor porro eligendi minus illum
+                            tenetur ipsum quas necessitatibus minima, iure ipsa obcaecati cumque quos tempora maxime quidem
+                            fugiat odit qui? Culpa officiis, atque vel exercitationem, natus architecto molestiae quibusdam
+                            cumque unde, nihil accusantium amet magni sapiente minus? Fugiat, pariatur a! Officiis dolor,
+                            assumenda consequuntur esse rerum libero voluptatibus temporibus quaerat dignissimos aliquid
+                            neque ea hic, porro beatae quo, praesentium id expedita mollitia fugiat. Praesentium voluptatem
+                            beatae doloribus recusandae, pariatur totam aperiam voluptates ipsa doloremque reprehenderit!
+                            Numquam voluptatibus ipsam aliquid.</p>
+                    </div>
+                </div>
+                <div class="photo-frame-2">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-2">
+                        <h3>Tiger Mama Candid-2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam vel? Minus molestias
+                            quo perspiciatis sapiente neque natus, voluptate quam repudiandae, qui harum et at eum eius
+                            dicta explicabo magnam!</p>
+                    </div>
+                </div>
+                <div class="photo-frame-1">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-1">
+                        <h3>Tiger Mama Candid-1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur distinctio temporibus
+                            quos nam corrupti? Possimus natus ratione distinctio reiciendis dolor porro eligendi minus illum
+                            tenetur ipsum quas necessitatibus minima, iure ipsa obcaecati cumque quos tempora maxime quidem
+                            fugiat odit qui? Culpa officiis, atque vel exercitationem, natus architecto molestiae quibusdam
+                            cumque unde, nihil accusantium amet magni sapiente minus? Fugiat, pariatur a! Officiis dolor,
+                            assumenda consequuntur esse rerum libero voluptatibus temporibus quaerat dignissimos aliquid
+                            neque ea hic, porro beatae quo, praesentium id expedita mollitia fugiat. Praesentium voluptatem
+                            beatae doloribus recusandae, pariatur totam aperiam voluptates ipsa doloremque reprehenderit!
+                            Numquam voluptatibus ipsam aliquid.</p>
+                    </div>
+                </div>
+                <div class="photo-frame-2">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-2">
+                        <h3>Tiger Mama Candid-2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam vel? Minus molestias
+                            quo perspiciatis sapiente neque natus, voluptate quam repudiandae, qui harum et at eum eius
+                            dicta explicabo magnam!</p>
+                    </div>
+                </div>
+                <div class="photo-frame-1">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-1">
+                        <h3>Tiger Mama Candid-1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur distinctio temporibus
+                            quos nam corrupti? Possimus natus ratione distinctio reiciendis dolor porro eligendi minus illum
+                            tenetur ipsum quas necessitatibus minima, iure ipsa obcaecati cumque quos tempora maxime quidem
+                            fugiat odit qui? Culpa officiis, atque vel exercitationem, natus architecto molestiae quibusdam
+                            cumque unde, nihil accusantium amet magni sapiente minus? Fugiat, pariatur a! Officiis dolor,
+                            assumenda consequuntur esse rerum libero voluptatibus temporibus quaerat dignissimos aliquid
+                            neque ea hic, porro beatae quo, praesentium id expedita mollitia fugiat. Praesentium voluptatem
+                            beatae doloribus recusandae, pariatur totam aperiam voluptates ipsa doloremque reprehenderit!
+                            Numquam voluptatibus ipsam aliquid.</p>
+                    </div>
+                </div>
+                <div class="photo-frame-2">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-2">
+                        <h3>Tiger Mama Candid-2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam vel? Minus molestias
+                            quo perspiciatis sapiente neque natus, voluptate quam repudiandae, qui harum et at eum eius
+                            dicta explicabo magnam!</p>
+                    </div>
+                </div>
+                <div class="photo-frame-1">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-1">
+                        <h3>Tiger Mama Candid-1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur distinctio temporibus
+                            quos nam corrupti? Possimus natus ratione distinctio reiciendis dolor porro eligendi minus illum
+                            tenetur ipsum quas necessitatibus minima, iure ipsa obcaecati cumque quos tempora maxime quidem
+                            fugiat odit qui? Culpa officiis, atque vel exercitationem, natus architecto molestiae quibusdam
+                            cumque unde, nihil accusantium amet magni sapiente minus? Fugiat, pariatur a! Officiis dolor,
+                            assumenda consequuntur esse rerum libero voluptatibus temporibus quaerat dignissimos aliquid
+                            neque ea hic, porro beatae quo, praesentium id expedita mollitia fugiat. Praesentium voluptatem
+                            beatae doloribus recusandae, pariatur totam aperiam voluptates ipsa doloremque reprehenderit!
+                            Numquam voluptatibus ipsam aliquid.</p>
+                    </div>
+                </div>
+                <div class="photo-frame-2">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-2">
+                        <h3>Tiger Mama Candid-2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam vel? Minus molestias
+                            quo perspiciatis sapiente neque natus, voluptate quam repudiandae, qui harum et at eum eius
+                            dicta explicabo magnam!</p>
+                    </div>
+                </div>
+                <div class="photo-frame-1">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-1">
+                        <h3>Tiger Mama Candid-1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur distinctio temporibus
+                            quos nam corrupti? Possimus natus ratione distinctio reiciendis dolor porro eligendi minus illum
+                            tenetur ipsum quas necessitatibus minima, iure ipsa obcaecati cumque quos tempora maxime quidem
+                            fugiat odit qui? Culpa officiis, atque vel exercitationem, natus architecto molestiae quibusdam
+                            cumque unde, nihil accusantium amet magni sapiente minus? Fugiat, pariatur a! Officiis dolor,
+                            assumenda consequuntur esse rerum libero voluptatibus temporibus quaerat dignissimos aliquid
+                            neque ea hic, porro beatae quo, praesentium id expedita mollitia fugiat. Praesentium voluptatem
+                            beatae doloribus recusandae, pariatur totam aperiam voluptates ipsa doloremque reprehenderit!
+                            Numquam voluptatibus ipsam aliquid.</p>
+                    </div>
+                </div>
+                <div class="photo-frame-2">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-2">
+                        <h3>Tiger Mama Candid-2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam vel? Minus molestias
+                            quo perspiciatis sapiente neque natus, voluptate quam repudiandae, qui harum et at eum eius
+                            dicta explicabo magnam!</p>
+                    </div>
+                </div>
+                <div class="photo-frame-1">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-1">
+                        <h3>Tiger Mama Candid-1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur distinctio temporibus
+                            quos nam corrupti? Possimus natus ratione distinctio reiciendis dolor porro eligendi minus illum
+                            tenetur ipsum quas necessitatibus minima, iure ipsa obcaecati cumque quos tempora maxime quidem
+                            fugiat odit qui? Culpa officiis, atque vel exercitationem, natus architecto molestiae quibusdam
+                            cumque unde, nihil accusantium amet magni sapiente minus? Fugiat, pariatur a! Officiis dolor,
+                            assumenda consequuntur esse rerum libero voluptatibus temporibus quaerat dignissimos aliquid
+                            neque ea hic, porro beatae quo, praesentium id expedita mollitia fugiat. Praesentium voluptatem
+                            beatae doloribus recusandae, pariatur totam aperiam voluptates ipsa doloremque reprehenderit!
+                            Numquam voluptatibus ipsam aliquid.</p>
+                    </div>
+                </div>
+                <div class="photo-frame-2">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-2">
+                        <h3>Tiger Mama Candid-2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam vel? Minus molestias
+                            quo perspiciatis sapiente neque natus, voluptate quam repudiandae, qui harum et at eum eius
+                            dicta explicabo magnam!</p>
+                    </div>
+                </div>
+                <div class="photo-frame-1">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-1">
+                        <h3>Tiger Mama Candid-1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur distinctio temporibus
+                            quos nam corrupti? Possimus natus ratione distinctio reiciendis dolor porro eligendi minus illum
+                            tenetur ipsum quas necessitatibus minima, iure ipsa obcaecati cumque quos tempora maxime quidem
+                            fugiat odit qui? Culpa officiis, atque vel exercitationem, natus architecto molestiae quibusdam
+                            cumque unde, nihil accusantium amet magni sapiente minus? Fugiat, pariatur a! Officiis dolor,
+                            assumenda consequuntur esse rerum libero voluptatibus temporibus quaerat dignissimos aliquid
+                            neque ea hic, porro beatae quo, praesentium id expedita mollitia fugiat. Praesentium voluptatem
+                            beatae doloribus recusandae, pariatur totam aperiam voluptates ipsa doloremque reprehenderit!
+                            Numquam voluptatibus ipsam aliquid.</p>
+                    </div>
+                </div>
+                <div class="photo-frame-2">
+                    <div class="photo">
+                        <img src="images/tiger.jpg" alt="">
+                    </div>
+                    <div class="photo-detail-2">
+                        <h3>Tiger Mama Candid-2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam vel? Minus molestias
+                            quo perspiciatis sapiente neque natus, voluptate quam repudiandae, qui harum et at eum eius
+                            dicta explicabo magnam!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    
+    </html>

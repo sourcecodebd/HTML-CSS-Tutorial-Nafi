@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Animation Network</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: limegreen;
+                left: 0;
+                top: 0
+            }
+
+            25% {
+                background-color: rgb(53, 50, 205);
+                top: 300px
+            }
+
+            50% {
+                background-color: rgb(53, 50, 205);
+                top: 0
+            }
+
+            75% {
+                background-color: rgb(53, 50, 205);
+                top: 300px
+            }
+
+            100% {
+                background-color: magenta;
+                left: 600px;
+                top: 0
+            }
+        }
+
+        .stage {
+            margin: auto;
+            width: 700px;
+            height: 400px;
+            background-color: lightskyblue;
+        }
+
+        .ball {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: limegreen;
+            border-radius: 50%;
+            animation: sliding 2.0s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+
+        .blogs {
+            text-align: justify;
+        }
+
+        .orange {
+            color: rgb(255, 72, 0)
+        }
+
+        @media screen and (max-width: 600px) {
+            .stage {
+                width: 100%;
+            }
+
+            .ball {
+                height: 10%;
+                width: 10%
+            }
+
+            @keyframes sliding {
+                0% {
+                    background-color: limegreen;
+                    left: 0;
+                    top: 0
+                }
+
+                25% {
+                    background-color: limegreen;
+                    top: 90%
+                }
+
+                50% {
+                    background-color: rgb(53, 50, 205);
+                    top: 0
+                }
+
+                75% {
+                    background-color: limegreen;
+                    top: 90%
+                }
+
+                100% {
+                    background-color: magenta;
+                    left: 90%;
+                    top: 0
+                }
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animation <span style="color: black">Network</span></h1>
+
+    <main>
+        <section>
+            <header class="header">
+
+                <nav>
+                    <ul>
+                        <li><a href="../explore-HTML5/index.html">Home</a></li><br>
+                        <li><a href="#">CSS3</a>
+                            <ul class="dropdown">
+                                <li><a href="svg.html">SVG</a></li><br>
+                                <li><a href="visibility.html">Visibilty</a></li><br>
+                                <li><a href="overflow.html">Overflow</a></li><br>
+                                <li><a href="images.html">Image</a></li><br>
+                                <li><a href="icon.html">Icon</a></li><br>
+                                <li><a href="transform.html">Transform</a></li><br>
+                                <li><a href="transition.html">Transition</a></li><br>
+                                <li><a href="cricket.html">Cricket Match</a></li><br>
+                                <li><a href="animation.html">Animation</a></li><br>
+                                <li><a href="float.html">Float</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+                <h2>Welcome to Animation</h2>
+                <h2>I'm learning <span style="color:rgb(187, 255, 0)">Animation</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quod quam at porro distinctio,
+                    eum
+                    odio eveniet laudantium facilis eaque asperiores assumenda repellendus officia. Nesciunt aspernatur
+                    nam
+                    pariatur! Nisi, itaque.
+                </p>
+                <h2>Let's Start Animation</h2>
+            </header>
+
+            <section class="blogs">
+                <h3>About Animation</h3>
+                <div class="stage">
+                    <div class="ball"></div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>Nafi Mahmud &copy Copyright 2021 | Animation <span style="color: grey">Network</span></footer>
+</body>
+
+</html>

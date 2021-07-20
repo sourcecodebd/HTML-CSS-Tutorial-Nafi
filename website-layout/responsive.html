@@ -1,0 +1,262 @@
+<!-- flex-warp: Makes website responsive. Alternative of media query -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/html-css-favicon.ico" type="image/x-icon" sizes="256x256">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Responsive Network</title>
+    <style>
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .food {
+            border: 3px solid rosybrown;
+            width: 300px;
+            height: 400px;
+            overflow: scroll;
+            overflow-x: hidden;
+            padding: 10px;
+            margin: 10px;
+            text-align: justify
+        }
+
+        img {
+            width: 100%
+        }
+
+        /* @media screen and (max-width: 1000px) {
+
+            .menu-container {
+                flex-direction: column;
+            }
+
+            .food {
+                background-color: rgb(172, 199, 74);
+                margin-bottom: 20px
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Responsive <span style="color: black">Network</span></h1>
+
+    <main>
+        <section>
+            <header class="header">
+
+                <nav>
+                    <ul>
+                        <li><a href="../explore-HTML5/index.html">Home</a></li><br>
+                        <li><a href="#">Layout</a>
+                            <ul class="dropdown">
+                                <li><a href="album.html">Album</a></li><br>
+                                <li><a href="calender.html">Calender</a></li><br>
+                                <li><a href="flexbox.html">Flex-Box</a></li><br>
+                                <li><a href="flexuse.html">Flex Use</a></li><br>
+                                <li><a href="grid.html">Grid</a></li><br>
+                                <li><a href="responsive.html">Responsive</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Link-1</a></li><br>
+                                        <li><a href="">Link-2</a></li><br>
+                                        <li><a href="">Link-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <h2>Welcome to Responsive</h2>
+                <h2>I'm learning <span style="color:rgb(187, 255, 0)">Responsive</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quod quam at porro distinctio,
+                    eum
+                    odio eveniet laudantium facilis eaque asperiores assumenda repellendus officia. Nesciunt aspernatur
+                    nam
+                    pariatur! Nisi, itaque.
+                </p>
+            </header>
+
+            <section class="blogs">
+
+                <h2>Let's Explore Responsive!</h2>
+                <!-- .menu-container>.food*8>img[src="images/healthy.png"]+h2{Price: $@100}+p>Lorem100+br+button{Order Now} -->
+                <div class="menu-container">
+                    <div class="food">
+                        <img src="images/healthy.png" alt="">
+                        <h2>Price: 100</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis necessitatibus placeat
+                            pariatur modi fuga
+                            similique neque soluta possimus vitae delectus recusandae aliquid explicabo, quae rerum
+                            mollitia enim
+                            doloremque sed hic accusamus voluptates minus impedit consequuntur. Totam exercitationem
+                            commodi
+                            praesentium, odit repudiandae omnis, fugit, fugiat sed at hic cum aliquid animi itaque modi
+                            aperiam
+                            architecto eum. Magnam, iste sed? Provident molestiae atque omnis sapiente saepe. Molestiae
+                            alias
+                            ducimus modi totam maxime, nesciunt quasi magni distinctio expedita officia facilis beatae
+                            ut et
+                            eligendi saepe soluta laboriosam perspiciatis nobis voluptates animi? Beatae reprehenderit
+                            illo
+                            repudiandae odio vel eaque eligendi voluptas, culpa accusantium ab?<br><button>Order
+                                Now</button></p>
+                    </div>
+                    <div class="food">
+                        <img src="images/healthy.png" alt="">
+                        <h2>Price: 101</h2>
+                        <p>Alias vel repellat quos architecto id expedita nulla fugit nisi blanditiis possimus eum iste
+                            illum,
+                            consequatur aliquam ad molestias pariatur odio doloribus. Recusandae quo saepe iste nostrum
+                            ad dolorum
+                            iure maxime reiciendis animi quaerat molestias, ipsam incidunt facere! Ex, hic eaque
+                            perferendis
+                            mollitia, repellat quaerat, aliquam dignissimos accusamus eveniet placeat illo labore ad
+                            molestias nulla
+                            soluta impedit? Illo architecto ex quae natus laboriosam fuga libero vitae, ipsa nulla
+                            consectetur, quas
+                            provident maxime dolores iure molestias nihil laudantium totam cupiditate deleniti deserunt
+                            corrupti
+                            delectus. Tempora, velit ipsum obcaecati eius sint voluptatibus libero quia illo, quidem
+                            deleniti odio.
+                            Nisi dolor distinctio ut.<br><button>Order Now</button></p>
+                    </div>
+                    <div class="food">
+                        <img src="images/healthy.png" alt="">
+                        <h2>Price: 102</h2>
+                        <p>Incidunt earum, expedita voluptas quisquam cupiditate architecto magni explicabo soluta
+                            accusamus
+                            laboriosam adipisci fugit, reprehenderit iure cum pariatur dolores quidem. Consequatur
+                            officia quos ex
+                            explicabo adipisci hic earum beatae. Magnam, dolorem illo perferendis repellat corporis
+                            nemo! Ratione
+                            error tempore architecto assumenda neque quasi dolor deserunt! Impedit quae, officiis
+                            quibusdam cumque
+                            sapiente iste sed hic suscipit dolore harum, facere soluta commodi ex officia voluptatum.
+                            Saepe,
+                            aperiam! Laborum eligendi sint delectus ratione quas, accusamus nisi? Cum, minus. Voluptatem
+                            facilis
+                            assumenda et deleniti labore saepe consequuntur ipsam, animi eveniet alias maxime atque qui
+                            doloribus
+                            necessitatibus earum porro. Sapiente repellendus ea perferendis maiores
+                            voluptatem.<br><button>Order
+                                Now</button></p>
+                    </div>
+                    <div class="food">
+                        <img src="images/healthy.png" alt="">
+                        <h2>Price: 103</h2>
+                        <p>Suscipit, commodi qui delectus adipisci officia amet velit incidunt? Ab eum, nesciunt atque
+                            temporibus
+                            praesentium architecto vitae a impedit aut iusto veritatis explicabo? Similique, quos
+                            asperiores sint
+                            pariatur eveniet placeat esse quod quis quam, et, labore at expedita nesciunt in deleniti
+                            necessitatibus
+                            harum perferendis autem! Laborum minus soluta corporis consequuntur recusandae ullam
+                            distinctio enim,
+                            totam nulla deserunt, molestias quisquam minima aut odit, et impedit! Maxime laudantium
+                            atque corporis
+                            quibusdam nihil, cumque natus sequi in quod repellat omnis placeat quae, hic, exercitationem
+                            deserunt
+                            perferendis doloremque voluptate consequuntur voluptates et praesentium! Repellat accusamus
+                            et,
+                            laudantium fuga enim eveniet dolorem dicta blanditiis quia.<br><button>Order Now</button>
+                        </p>
+                    </div>
+                    <div class="food">
+                        <img src="images/healthy.png" alt="">
+                        <h2>Price: 104</h2>
+                        <p>Quos earum cupiditate voluptatibus reiciendis quam. Ipsum debitis consectetur atque nam
+                            explicabo
+                            deserunt dolorum fugit? Nam veritatis possimus nesciunt suscipit pariatur porro cupiditate
+                            impedit
+                            temporibus nostrum a. Sequi dolores dicta, atque, autem quia quas impedit quae voluptatem
+                            eveniet
+                            voluptatibus ab et numquam sapiente minima esse placeat? Perspiciatis ipsa quod explicabo
+                            saepe, maxime
+                            et omnis alias voluptas facilis maiores eos. Voluptatibus consequatur omnis deleniti
+                            adipisci doloribus?
+                            Adipisci fuga vitae suscipit tempora! Officiis id voluptate alias amet quam eveniet nihil
+                            modi, nesciunt
+                            dolorum inventore temporibus reprehenderit neque suscipit repellat delectus sit? Minus
+                            eveniet voluptas
+                            laborum voluptatum dignissimos quisquam sed voluptatibus, vero quidem.<br><button>Order
+                                Now</button></p>
+                    </div>
+                    <div class="food">
+                        <img src="images/healthy.png" alt="">
+                        <h2>Price: 105</h2>
+                        <p>Architecto repudiandae, beatae hic voluptate non aliquid impedit, voluptatem ipsum odio
+                            repellat
+                            perferendis quo expedita corporis. Itaque sint asperiores quis libero. Consequuntur, dolorem
+                            sapiente
+                            veritatis maxime laborum, neque quasi voluptates quos sunt doloribus mollitia minima tenetur
+                            eveniet
+                            eius distinctio repellat voluptatum. Provident, quae sit! Voluptatum sed, corrupti dolor rem
+                            assumenda
+                            iure voluptatibus maiores omnis quo, corporis accusantium eveniet eos blanditiis
+                            necessitatibus
+                            deserunt, reprehenderit consectetur magnam vero nihil natus sequi nisi debitis? Quibusdam
+                            magni porro
+                            nemo? Ex consectetur tempora adipisci voluptatibus numquam ratione impedit velit,
+                            dignissimos iure esse
+                            minima eligendi, explicabo quia sed nostrum aliquid in, veniam nulla facere aspernatur
+                            sint!<br><button>Order Now</button></p>
+                    </div>
+                    <div class="food">
+                        <img src="images/healthy.png" alt="">
+                        <h2>Price: 106</h2>
+                        <p>Dignissimos aliquid asperiores ut officia ea sed qui itaque dolores laborum. Sit optio
+                            consectetur quidem
+                            provident maiores at minus reiciendis? Dolorem ipsum laborum, maiores cumque rem voluptas
+                            quos sapiente.
+                            A voluptatibus voluptate eius harum reiciendis consequatur illo deleniti amet eaque alias
+                            suscipit
+                            officia repellendus non, ratione, laudantium eligendi. Iure, accusantium illo dolore beatae
+                            cumque
+                            perspiciatis. Delectus, optio officiis exercitationem inventore facilis blanditiis
+                            explicabo, provident
+                            incidunt deserunt dolores dolor reprehenderit necessitatibus nulla harum. Ducimus beatae
+                            temporibus
+                            facere nihil nam amet cumque dicta laboriosam sit pariatur cum perferendis nemo nobis
+                            accusamus ad
+                            inventore quos quia quo magni consequuntur sed, magnam maxime a?<br><button>Order
+                                Now</button></p>
+                    </div>
+                    <div class="food">
+                        <img src="images/healthy.png" alt="">
+                        <h2>Price: 107</h2>
+                        <p>Sint est quam amet ullam temporibus sit minus voluptatibus aut vero minima modi optio nihil
+                            beatae veniam
+                            cum illum aliquam, illo, voluptates quis ipsum tempora quasi quidem reprehenderit quod.
+                            Earum placeat
+                            dolorem laborum ex beatae quae repudiandae dolore amet molestias, illum fugit voluptatibus
+                            repellendus
+                            vitae dolor eos iure! Voluptatum provident rerum harum illo porro voluptatibus ex adipisci
+                            necessitatibus dolor, nulla pariatur magnam laborum distinctio iure corrupti debitis et iste
+                            impedit
+                            placeat minima assumenda, beatae doloremque. Repellendus natus molestiae beatae corporis
+                            illo dolorum,
+                            at facilis maiores asperiores dolores ipsa tempore itaque voluptate, accusamus magnam iusto
+                            animi dolore
+                            quam blanditiis quaerat officia!<br><button>Order Now</button></p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </main>
+
+    <footer>Nafi Mahmud &copy Copyright 2021 | Responsive <span style="color: grey">Network</span></footer>
+</body>
+
+</html>
